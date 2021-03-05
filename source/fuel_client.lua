@@ -28,6 +28,10 @@ function ManageFuelUsage(vehicle)
 	if IsVehicleEngineOn(vehicle) then
 		SetFuel(vehicle, GetVehicleFuelLevel(vehicle) - Config.FuelUsage[Round(GetVehicleCurrentRpm(vehicle), 1)] * (Config.Classes[GetVehicleClass(vehicle)] or 1.0) / 10)
 	end
+
+    if GetVehicleFuelLevel(vehicle) < 1 then
+        SetVehiclePetrolTankHealth(vehicle, 0)
+    end
 end
 
 Citizen.CreateThread(function()
@@ -131,6 +135,7 @@ AddEventHandler('fuel:startFuelUpTick', function(pumpObject, ped, vehicle)
 
 		if currentCash >= currentCost then
 			SetFuel(vehicle, currentFuel)
+            SetVehiclePetrolTankHealth(vehicle, 1000)
 		else
 			isFueling = false
 		end

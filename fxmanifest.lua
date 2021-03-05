@@ -2,8 +2,8 @@ fx_version 'bodacious'
 game 'gta5'
 
 author 'InZidiuZ'
-description 'Legacy Fuel'
-version '1.3'
+description 'mx-fuel system'
+version '1.4'
 
 -- What to run
 client_scripts {

@@ -65,27 +65,27 @@ Config.RemoveHUDForBlacklistedVehicle = true
 
 -- Class multipliers. If you want SUVs to use less fuel, you can change it to anything under 1.0, and vise versa.
 Config.Classes = {
-	[0] = 1.0, -- Compacts
+	[0] = 0.8, -- Compacts
 	[1] = 1.0, -- Sedans
-	[2] = 1.0, -- SUVs
+	[2] = 1.1, -- SUVs
 	[3] = 1.0, -- Coupes
-	[4] = 1.0, -- Muscle
-	[5] = 1.0, -- Sports Classics
-	[6] = 1.0, -- Sports
-	[7] = 1.0, -- Super
-	[8] = 1.0, -- Motorcycles
+	[4] = 1.1, -- Muscle
+	[5] = 1.2, -- Sports Classics
+	[6] = 1.3, -- Sports
+	[7] = 1.5, -- Super
+	[8] = 0.7, -- Motorcycles
 	[9] = 1.0, -- Off-road
-	[10] = 1.0, -- Industrial
-	[11] = 1.0, -- Utility
-	[12] = 1.0, -- Vans
+	[10] = 1.2, -- Industrial
+	[11] = 1.2, -- Utility
+	[12] = 1.3, -- Vans
 	[13] = 0.0, -- Cycles
 	[14] = 1.0, -- Boats
-	[15] = 1.0, -- Helicopters
-	[16] = 1.0, -- Planes
+	[15] = 3.0, -- Helicopters
+	[16] = 2.0, -- Planes
 	[17] = 1.0, -- Service
 	[18] = 1.0, -- Emergency
 	[19] = 1.0, -- Military
-	[20] = 1.0, -- Commercial
+	[20] = 1.4, -- Commercial
 	[21] = 1.0, -- Trains
 }
 
